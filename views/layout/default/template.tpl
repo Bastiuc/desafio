@@ -6,7 +6,7 @@
 
     <meta name="description" content="frame de aplicaciones web">
 
-    <title>{$title|default:"AxiomaFrame"}</title>
+    <title>{$title|default:"desafio"}</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -16,12 +16,18 @@
    </head>
    <body>
   {include file="menu.tpl"}
-
-      <div class="container">
-
-
-            {include file=$_content}
-          </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+          menus
+      </div>
+      <div class="col-md-9">
+          {include file=$_content}
+      </div>
+    
+    </div>
+  </div>
+    
 
     {include file="link_js.tpl"}
 
